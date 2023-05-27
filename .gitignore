@@ -1,0 +1,22 @@
+node_modules
+.DS_Store
+/build
+npm-debug.log*
+
+.env
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+client/node_modules
+server/node_modules
+server/.env

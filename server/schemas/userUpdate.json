@@ -1,0 +1,91 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "User Update Schema",
+    "required": [
+        "password",
+        "firstName",
+        "lastName",
+        "age",
+        "email",
+        "phone"
+    ],
+    "properties": {
+        "password": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 20,
+            "title": "The password Schema",
+            "examples": [
+                "samplepassword"
+            ]
+        },
+        "firstName": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20,
+            "title": "The firstName Schema",
+            "examples": [
+                "Elton"
+            ]
+        },
+        "lastName": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20,
+            "title": "The lastName Schema",
+            "examples": [
+                "John"
+            ]
+        },
+        "age": {
+            "type": "integer",
+            "minimum": 18,
+            "maximum": 70,
+            "title": "The age Schema",
+            "examples": [
+                30
+            ]
+        },
+        "email": {
+            "type": "string",
+            "maxLength": 50,
+            "format": "email",
+            "title": "The email Schema",
+            "examples": [
+                "mail@mail.com"
+            ]
+        },
+        "phone": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 15,
+            "title": "The phone Schema",
+            "examples": [
+                "1234567899"
+            ]
+        },
+        "userImgUrl": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 200,
+            "title": "The userImgUrl Schema",
+            "examples": [
+                "https://user-photo-url.jpg"
+            ]
+        }
+    },
+    "examples": [
+        {
+            "password": "samplepassword",
+            "firstName": "Elton",
+            "lastName": "John",
+            "age": 30,
+            "email": "mail@mail.com",
+            "phone": "1234567899",
+            "userImgUrl": "https://user-photo-url.jpg"
+        }
+    ]
+}

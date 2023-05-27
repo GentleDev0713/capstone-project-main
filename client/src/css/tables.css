@@ -1,0 +1,193 @@
+/* Table elements styles BEGIN*/
+.table-container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.header-missions h1 {
+    font-weight: 200;
+    font-size: 5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-users {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header-users div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 25%;
+}
+
+.header-users h1 {
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.header-users button {
+    font-weight: 300;
+    font-size: 1.3em;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgb(57, 92, 207);
+    border-style: none;
+    border-radius: 3px;
+}
+
+.table-container table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+}
+
+.table-container th {
+    font-weight: 300;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    background-color: rgb(57, 92, 207);
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-container tr:hover {
+    background-color: #ddd;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/*Removes underline on text in a Link and sets text color to black */
+.table-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.edit-delete-icons,
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+
+.table-container section {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-container section h3 {
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+}
+
+.table-container section p {
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.table-container section button {
+    font-weight: 300;
+    font-size: 1.5em;
+    color: white;
+    width: 100%;
+    padding: 3px;
+    margin-top: 10px;
+    background-color: rgb(57, 92, 207);
+    border-style: none;
+    border-radius: 3px;
+}
+
+
+/* Table elements styles END*/
+
+
+/* Styling or vertical table in <User> component START*/
+
+.verticle-table-container {
+    padding: 50px;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+}
+
+.verticle-table-container h1 {
+    font-weight: 200;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.verticle-table-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.verticle-table-container th {
+    font-weight: 400;
+    font-size: 1.2em;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.verticle-table-container td {
+    font-weight: 300;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.verticle-table-container button {
+    font-weight: 300;
+    font-size: 1.5em;
+    color: white;
+    width: 100%;
+    padding: 3px;
+    margin-top: 10px;
+    background-color: rgb(57, 92, 207);
+    border-style: none;
+    border-radius: 3px;
+}
+
+/* Styling or vertical table in <User> component END*/
+
+
+
+/* Styles for some of the above elements when viewe don screen smaller than 720px  BEGIN*/
+
+@media(max-width: 720px) {
+
+    .missions-container {
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .missions-container table {
+        margin-top: 5px;
+    }
+}

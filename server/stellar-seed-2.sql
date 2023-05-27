@@ -1,0 +1,24 @@
+-- The password for testuser and testadmin is password
+
+-- PLEASE READ: 
+-- stellar-seed-2.sql should be the only seed file that is run when deploying the application.  It seeds all the required data for the table planets and it seeds the data for two users, one of which is an admin.  These users can be deleted by an admin after deployment.
+-- All the data for the tables astronauts, spacecraft, and launch_sites is fetched from three different APIs and then inserted into the aforementioned tables.  
+-- Thee three files - astronauts.js, launchSites.js, and spacecraft.js - located in /server/apiServicesDB each contain the functions and query to fetch the relevant data from an API and then instert it into the respective table once the DB and tables are created.
+-- NOTE: a mission cannot be created until all tables are populated. 
+-- stellar-seed-2.sql and the .js files in apiServicesDB can be run in any order once the DB and tables are created.
+
+INSERT INTO users (username, password, first_name, last_name, age, email, phone, user_img_url, is_admin)
+VALUES('testuser','$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q', 'Test', 'User', 30, 'mail@mail.com', 1112223333, 'https://www.jamsadr.com/images/neutrals/person-donald-900x1080.jpg', FALSE),
+('testadmin','$2b$12$AZH7virni5jlTTiGgEg4zu3lSvAw68qVEfSIOjJ3RqtbJbdW/Oi5q', 'Test', 'Admin', 30, 'admin@mail.com', 3334445555, 'https://caricom.org/wp-content/uploads/Floyd-Morris-Remake-1024x879-1.jpg', TRUE);
+
+
+INSERT INTO planets (id, planet_name, planet_description, planet_distance, planet_img_url)
+VALUES
+(1, 'Mercury', 'Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the planets in our solar system', 0.000011, 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg'),
+(2, 'Venus', 'Venus is the second planet from the Sun and is named after the Roman goddess of love and beauty. As the brightest natural object in Earth''s night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight', 0.000004, 'https://upload.wikimedia.org/wikipedia/commons/0/08/Venus_from_Mariner_10.jpg'),
+(4, 'Mars', 'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often called the \\\"Red Planet\\\".\"', 0.000037, 'https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'),
+(5, 'Jupiter', 'Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun.', 0.000088, 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg'),
+(6, 'Saturn', 'Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive.', 0.00017, 'https://i2-prod.edinburghlive.co.uk/incoming/article18630618.ece/ALTERNATES/s810/1_GettyImages-606191046.jpg'),
+(7, 'Uranus', 'Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares, grandfather of Zeus and father of Cronus. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.', 0.000304, 'https://upload.wikimedia.org/wikipedia/commons/4/48/Uranus_as_seen_by_NASA%27s_Voyager_2_%28remastered%29.png'),
+(8, 'Neptune', 'Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus.', 0.000478, 'https://upload.wikimedia.org/wikipedia/commons/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg'),
+(9, 'Pluto', 'Pluto is a dwarf planet that lies in the Kuiper Belt, an area full of icy bodies and other dwarf planets out past Neptune. Pluto is very small, only about half the width of the United States and its biggest moon Charon is about half the size of Pluto.', 0.000559, 'https://s3.amazonaws.com/www.explorersweb.com/wp-content/uploads/2021/12/12030749/shutterstock_1666194157.jpg');

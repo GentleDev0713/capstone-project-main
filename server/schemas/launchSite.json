@@ -1,0 +1,65 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Launchsite Schema",
+    "required": [
+        "id",
+        "siteName",
+        "countryCode",
+        "launchCount",
+        "padImgUrl"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+                1
+            ]
+        },
+        "siteName": {
+            "type": "string",
+            "minLength": 1,
+            "title": "The siteName Schema",
+            "examples": [
+                "Cape Canaveral"
+            ]
+        },
+        "countryCode": {
+            "type": "string",
+            "minLength": 1,
+            "title": "The countryCode Schema",
+            "examples": [
+                "USA"
+            ]
+        },
+        "launchCount": {
+            "type": "integer",
+            "default": 0,
+            "title": "The launchCount Schema",
+            "examples": [
+                10
+            ]
+        },
+        "padImgUrl": {
+            "type": "string",
+            "minLength": 1,
+            "title": "The padImgUrl Schema",
+            "examples": [
+                "https://launch-pad-image-url.jpg"
+            ]
+        }
+    },
+    "examples": [
+        {
+            "id": 1,
+            "siteName": "Cape Canaveral",
+            "countryCode": "USA",
+            "launchCount": 10,
+            "padImgUrl": "https://launch-pad-image-url.jpg"
+        }
+    ]
+}

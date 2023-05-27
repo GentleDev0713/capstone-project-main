@@ -1,0 +1,26 @@
+{
+    "name": "52-capstone-project-stellar-travel",
+    "version": "1.0.0",
+    "description": "Application Name Stellar Travel Agency",
+    "main": "index.js",
+    "scripts": {
+        "start": "cd server && npm start",
+        "install": "cd server && npm install && cd .. && cd client && npm install",
+        "build": "cd client && npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nevrsmer2/52-capstone-project.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nevrsmer2/52-capstone-project/issues"
+    },
+    "homepage": "https://github.com/nevrsmer2/52-capstone-project#readme",
+    "engines": {
+        "node": "19.x",
+        "npm": "9.x"
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Spacecraft Schema",
+    "required": [
+        "id",
+        "craftName",
+        "agencyName",
+        "agencyDescription",
+        "country",
+        "craftImgUrl"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+                1
+            ]
+        },
+        "craftName": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 50,
+            "title": "The craftName Schema",
+            "examples": [
+                "UFO in Space"
+            ]
+        },
+        "agencyName": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 50,
+            "title": "The agencyName Schema",
+            "examples": [
+                "NASA"
+            ]
+        },
+        "agencyDescription": {
+            "type": "string",
+            "minLength": 10,
+            "title": "The agencyDescription Schema",
+            "examples": [
+                "We orbit."
+            ]
+        },
+        "country": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 20,
+            "title": "The country Schema",
+            "examples": [
+                "U.S.A"
+            ]
+        },
+        "craftImgUrl": {
+            "type": "string",
+            "minLength": 5,
+            "title": "The craftImgUrl Schema",
+            "examples": [
+                "https://spacecraft-img-url.jpg"
+            ]
+        }
+    },
+    "examples": [
+        {
+            "id": 1,
+            "craftName": "UFO in Space",
+            "agencyName": "NASA",
+            "agencyDescription": "We orbit.",
+            "country": "U.S.A",
+            "craftImgUrl": "https://spacecraft-img-url.jpg"
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+/* Styles for all elements on all forms - add/update a company, job, or user */
+
+/*  Styles for elements in <form> components START */
+
+.form-container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form-header {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-header h1 {
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.form-header p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.form-container form {
+    width: 35%;
+    margin: auto;
+}
+
+.form-container input,
+select,
+textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.submit {
+    background-color: rgb(57, 92, 207);
+    color: white;
+    cursor: pointer;
+}
+
+.input-server-errors {
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-header h1 {
+    text-align: center;
+    width: 90%
+}
+
+.user-header img {
+    width: 100px;
+}
+
+.admin-checkbox {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.admin-checkbox label {
+    display: inline;
+    width: 50px;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.admin-checkbox input {
+    display: inline;
+    width: 20px;
+}
+
+/*  Styles for elements in <form> components END */
+
+
+/*  @Media Styles for .form-container and .form-header classes START */
+
+/* @media(max-width: 1080px) {
+    .form-container form {
+        width: 70%;
+    }
+
+    .form-header {
+        width: 70%;
+    }
+}
+
+@media(max-width: 720px) {
+    .form-container form {
+        width: 75%;
+    }
+
+    .form-header {
+        width: 75%;
+    }
+}
+
+@media(max-width: 420px) {
+    .form-container form {
+        width: 98%;
+    }
+
+    .form-header {
+        width: 98%;
+    }
+} */
+
+/*  @Media Styles for .form-container and .form-header classes END */

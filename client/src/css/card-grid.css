@@ -1,0 +1,88 @@
+/* Styling for components that display data in a grid of cards, i.e.,   astronauts.js, launchSites.js, planets.js, spacecraft.js.  When a grid requires unique styling, it is noted.*/
+
+/* Styling for parent container and header container START */
+.parent-container {
+    min-height: 100vh;
+    padding-top: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-image: url('../images/astronauts-background.jpeg');
+    background-size: auto;
+}
+
+header {
+    width: 97.5%;
+    margin-bottom: 3em;
+}
+
+header h1 {
+    font-weight: 200;
+    font-size: 4em;
+    color: white;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+header p {
+    font-weight: 100;
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    margin-bottom: .5em;
+}
+
+/* Styling for parent container and header container END */
+
+
+/* Styling for container that contains all cards */
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styling for card elements START*/
+.card {
+    width: 24%;
+    margin: .3em;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 1.7em;
+    text-align: center;
+    margin: 1em;
+}
+
+.card p {
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.card button {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 5px 10px;
+    background-color: rgb(57, 92, 207);
+    color: white;
+    border: solid 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.more-info-link {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for card elements END*/

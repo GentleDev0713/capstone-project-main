@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+
+/* Font type for site. Font weight is set independently via .css files */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Styling for success messsaging */
+
+.alert {
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1111;
+}
+
+.alert p {
+    margin: 0;
+}
+
+.alert-error {
+    background: lightcoral;
+}
+
+.alert-success {
+    background: lightgreen;
+}
+
+.close {
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}

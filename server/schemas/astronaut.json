@@ -1,0 +1,95 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Astronaut Schema",
+    "required": [
+        "id",
+        "firstName",
+        "lastName",
+        "nationality",
+        "age",
+        "missionCount",
+        "profile_img_url",
+        "bio"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+                1
+            ]
+        },
+        "firstName": {
+            "type": "string",
+            "minLength": 1,
+            "title": "The firstName Schema",
+            "examples": [
+                "John"
+            ]
+        },
+        "lastName": {
+            "type": "string",
+            "minLength": 1,
+            "title": "The lastName Schema",
+            "examples": [
+                "Glenn"
+            ]
+        },
+        "nationality": {
+            "type": "string",
+            "minLength": 1,
+            "title": "The nationality Schema",
+            "examples": [
+                "American"
+            ]
+        },
+        "age": {
+            "type": "integer",
+            "default": 0,
+            "title": "The age Schema",
+            "examples": [
+                90
+            ]
+        },
+        "missionCount": {
+            "type": "integer",
+            "default": 0,
+            "title": "The missionCount Schema",
+            "examples": [
+                5
+            ]
+        },
+        "profile_img_url": {
+            "type": "string",
+            "minLength": 1,
+            "title": "The profile_img_url Schema",
+            "examples": [
+                "https://astronaut-img-url.jpg"
+            ]
+        },
+        "bio": {
+            "type": "string",
+            "minLength": 1,
+            "title": "The bio Schema",
+            "examples": [
+                "This is a paragraph about me."
+            ]
+        }
+    },
+    "examples": [
+        {
+            "id": 1,
+            "firstName": "John",
+            "lastName": "Glenn",
+            "nationality": "American",
+            "age": 90,
+            "missionCount": 5,
+            "profile_img_url": "https://astronaut-img-url.jpg",
+            "bio": "This is a paragraph about me."
+        }
+    ]
+}

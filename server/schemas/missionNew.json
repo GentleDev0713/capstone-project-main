@@ -1,0 +1,115 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "mission_name",
+        "launch_date",
+        "user_id",
+        "planet_id",
+        "commander_id",
+        "captain_id",
+        "navigator_id",
+        "engineer_id",
+        "spacecraft_id",
+        "launch_site_id"
+    ],
+    "properties": {
+        "mission_name": {
+            "type": "string",
+            "default": "",
+            "title": "The mission_name Schema",
+            "examples": [
+                "Voyage to Mars."
+            ]
+        },
+        "launch_date": {
+            "type": "string",
+            "default": "",
+            "title": "The launch_date Schema",
+            "examples": [
+                "2023-04-15T15:52"
+            ]
+        },
+        "user_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The user_id Schema",
+            "examples": [
+                5
+            ]
+        },
+        "planet_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The planet_id Schema",
+            "examples": [
+                6
+            ]
+        },
+        "commander_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The commander_id Schema",
+            "examples": [
+                8
+            ]
+        },
+        "captain_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The captain_id Schema",
+            "examples": [
+                9
+            ]
+        },
+        "navigator_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The navigator_id Schema",
+            "examples": [
+                10
+            ]
+        },
+        "engineer_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The engineer_id Schema",
+            "examples": [
+                11
+            ]
+        },
+        "spacecraft_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The spacecraft_id Schema",
+            "examples": [
+                7
+            ]
+        },
+        "launch_site_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The launch_site_id Schema",
+            "examples": [
+                7
+            ]
+        }
+    },
+    "examples": [
+        {
+            "mission_name": "Voyage to Mars.",
+            "launch_date": "2023-04-15T15:52",
+            "user_id": 5,
+            "planet_id": 6,
+            "commander_id": 8,
+            "captain_id": 9,
+            "navigator_id": 10,
+            "engineer_id": 11,
+            "spacecraft_id": 7,
+            "launch_site_id": 7
+        }
+    ]
+}
